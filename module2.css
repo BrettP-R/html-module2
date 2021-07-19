@@ -1,0 +1,46 @@
+* {
+	font: 12px Verdana, Helvetica, sans-serif;
+	margin: 0;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+div {
+	background-color: #939393;
+	border: 2px solid black;
+	margin: 1rem;
+}
+
+div .label {
+	margin: 0;
+	padding:  0.2rem 0.2rem;
+	float:  right;
+	width: 120px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	border-top: 0;
+	border-right: 0;
+}
+
+div .chicken {
+	background-color: magenta;
+}
+
+div .beef {
+	background-color: darkred;
+	color: white;
+}
+
+div .sushi {
+	background-color: goldenrod;
+}
+
+div .content {
+	clear: right;
+	padding: 0.5rem 0;
+	border: 0;
+}
