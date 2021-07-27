@@ -6,15 +6,27 @@
 h1 {
 	font-size: 24px;
 	font-weight: bold;
+	text-align: center;
+	margin: 24px;
 }
 
-div {
-	background-color: #939393;
+#container {
+	right: 0; 
+	text-align: center;
+	/*background-color: #cccccc;*/
+}
+
+.menu-item {
+	background-color: #C6C6C6;
 	border: 2px solid black;
-	margin: 1rem;
+	/*margin: 1rem;*/
+	display: inline-block;
+	width: 94%;
+	vertical-align:top;
+	margin-bottom: 2rem;
 }
 
-div .label {
+.label {
 	margin: 0;
 	padding:  0.2rem 0.2rem;
 	float:  right;
@@ -24,23 +36,70 @@ div .label {
 	font-weight: bold;
 	border-top: 0;
 	border-right: 0;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
 }
 
-div .chicken {
+.chicken {
 	background-color: magenta;
 }
 
-div .beef {
+.beef {
 	background-color: darkred;
 	color: white;
 }
 
-div .sushi {
+.sushi {
 	background-color: goldenrod;
 }
 
-div .content {
+.content {
 	clear: right;
-	padding: 0.5rem 0;
+	padding: 1rem;
 	border: 0;
+	text-align: left;
 }
+
+
+@media (min-width: 767px) and (max-width:  991px) {
+	.menu-item {
+		width: 44%;
+	}
+	.left {
+		margin-right: 2rem;
+	}
+	.right {
+		width: 92%;
+		margin: 0 auto;
+	}
+
+}
+
+@media (min-width: 992px) {
+	.menu-item {
+		width: 30%;
+		/*margin: 0 0 2rem 2rem;*/
+	}
+	.left {
+		margin-left: 2rem;
+	}
+	.center {
+		margin: 0 2rem;
+	}
+	.right {
+		margin-right: 2rem;
+	}
+}
+
+
+/*.left {
+	float: left;
+	margin-left: 1rem;
+}
+.center {
+	margin: 0 auto;
+}
+.right {
+	float: right;
+	margin-right: 1rem;
+}*/
